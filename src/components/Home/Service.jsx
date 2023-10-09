@@ -12,11 +12,11 @@ const Service = () => {
     }, []);
 
     return (
-        <div className="">
+        <div className="my-6">
             <div className="flex justify-center items-center">
-                <h2 className="text-2xl font-bold">Our Service</h2>
+                <h2 className="text-3xl font-bold mb-4">Our Service</h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3">
+            <div className="grid grid-cols-1 lg:grid-cols-3">
                 {data?.map(card => <Card key={data.id} data={card}></Card>)}
             </div>
         </div>
