@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "cover_img": "https://i.ibb.co/C0B0YrG/wedding.jpg",
+    "title": "Wedding Party Events",
+    "short_description": "Weddings are joyous celebrations of love, uniting two souls in matrimony.",
+    "long_description": "Weddings are a sacred union of two individuals, a day filled with love, laughter, and cherished moments. They mark the beginning of a beautiful journey together, as family and friends gather to witness the exchange of vows. From the elegant attire to the heartfelt speeches and the dance floor that comes alive, weddings are a testament to the power of love and commitment.",
+    "price": 1200
+  },
+  {
+    "id": 2,
+    "cover_img": "https://i.ibb.co/zbVhBZY/birthday.jpg",
+    "title": "Birthday Parties",
+    "short_description": "Birthday parties are festive gatherings to celebrate another year of life.",
+    "long_description": "Birthday parties are an annual tradition where friends and family come together to celebrate the passage of time and the growth of an individual. Whether it's a child's excitement at blowing out candles on a cake or an adult's reflection on life's journey, birthday parties are moments of joy, reflection, and appreciation.",
+    "price": 700
+  },
+  {
+    "id": 3,
+    "cover_img": "https://i.ibb.co/fkkFgDc/anniversari.jpg",
+    "title": "Anniversaries Parties",
+    "short_description": " Anniversaries mark the milestones of love and commitment.",
+    "long_description": "Anniversaries are special occasions that commemorate years of togetherness. They are a time for couples to reflect on their journey, reaffirm their love, and look forward to the future. Whether it's a first-year celebration or a golden anniversary, these moments remind us of the enduring power of love.",
+    "price": 850
+  },
+  {
+    "id": 4,
+    "cover_img": "https://i.ibb.co/7pqHn9f/engagement.jpg",
+    "title": "Engagement Parties",
+    "short_description": "Engagement parties announce the promise of a lifelong partnership.",
+    "long_description": "Engagement parties are joyful gatherings where couples share the news of their commitment to wed. It's a time for loved ones to offer their blessings, exchange stories, and revel in the beginning of a new chapter in the couple's life. These parties are a precursor to the grand celebration of their impending marriage.",
+    "price": 1100
+  },
+  {
+    "id": 5,
+    "cover_img": "https://i.ibb.co/HCbBMCV/retirement.jpg",
+    "title": "Retirement Parties",
+    "short_description": "Retirement parties honor the culmination of a fulfilling career.",
+    "long_description": "Retirement parties are heartfelt events that celebrate the culmination of a person's professional journey. They provide an opportunity for colleagues and friends to express their appreciation for years of hard work, share anecdotes, and wish the retiree a fulfilling and relaxing retirement ahead.",
+    "price": 800
+  },
+  {
+    "id": 6,
+    "cover_img": "https://i.ibb.co/x1D0kBs/baby-shower.jpg",
+    "title": "Baby Shower Events",
+    "short_description": "Baby showers welcome a new life with love and anticipation.",
+    "long_description": "Baby showers are joyous gatherings where family and friends come together to celebrate the impending arrival of a new baby. They are filled with gifts, games, and well-wishes for the parents-to-be. It's a time to offer support and love as the family prepares for the exciting adventure of parenthood.",
+    "price": 1000
+  }
+]
