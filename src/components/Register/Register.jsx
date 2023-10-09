@@ -1,10 +1,11 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../provider/Authprovider";
 
 
 const Register = () =>{
-
+    const [registerError, setRegisterError] = useState('');
+    const [success, setSuccess] = useState('');
     const { createUser } = useContext(AuthContext);
 
     const handlRegister = e => {
@@ -14,12 +15,29 @@ const Register = () =>{
         const password = e.target.password.value;
         console.log(name, email, password);
 
+        // reset error
+        setRegisterError('');
+        setSuccess('');
+
+        if (password.length < 6) {
+            setRegisterError('Password should be at least 6 characters.');
+            return;
+        } else if (!/[A-Z]/.test(password)) {
+            setRegisterError('Password should have at least one upper-case.')
+            return;
+        }else if(!/[!@#$%^&*()_+{}:;<>,.?~]/.test(password)){
+            setRegisterError('Password should have special characters.')
+            return;
+        }
+
         createUser(email, password)
         .then(result =>{
             console.log(result.user);
+            setSuccess('User Registerd.');
         })
         .catch(error =>{
             console.error(error);
+            setRegisterError(error.message);
         })
 
     }
@@ -60,6 +78,12 @@ const Register = () =>{
                     <button className="btn btn-link">Log in</button>
                     </Link></p>
                 </form>
+                {
+                    success && <p className="text-green-700">{success}</p>
+                }
+                {
+                    registerError && <p className="text-pink-700">{registerError}</p>
+                }
             </div>
         </div>
     </div>
